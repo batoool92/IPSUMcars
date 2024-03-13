@@ -1,0 +1,81 @@
+.Hero {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100vw;
+    padding-top: 3rem;
+    padding-left: 4rem;
+}
+
+.HeroFirstHalf {
+    padding-top: 5rem;
+    max-width: 45%;
+}
+
+.HeroSecondHalf {
+    max-width: 45%;
+    height: 68vh;
+    /* padding: 3rem; */
+    background: url('../../assets/Imgs/HeroCarBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.HeroCar {
+    max-width: 100%;
+    transform: translate(-5%, -10%);
+}
+
+.HeroTitle {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-family: var(--font-family);
+}
+
+.HeroText1 {
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    font-family: Roboto;
+}
+
+.HeroText2 {
+    font-size: 1rem;
+    margin-bottom: 4rem;
+    font-family: var(--font-family);
+    color: #00000080;
+
+}
+
+.ExploreButton {
+    width: 12rem;
+    height: 3rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--font-family);
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+.ExploreButton:hover {
+    opacity: 0.8;
+}
+@media screen and (max-width:800px) {
+    .HeroCar {
+        transform: translateY(15%);
+    }
+}
+
+@media screen and (max-width:750px) {
+    .HeroCar {
+        transform: translateY(25%);
+    }
+}
+
+@media screen and (max-width:720px) {
+    .HeroCar {
+        display: none;
+    }
+}

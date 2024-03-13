@@ -1,0 +1,238 @@
+.CarDetails-Container {
+    height: 100%;
+    position: relative;
+    padding: 0rem 4rem 0rem 4rem;
+    overflow-x: hidden;
+}
+
+.Details-Background {
+    max-width: 48vw;
+    width: 48vw;
+    height: 89%;
+    object-fit: fill;
+    position: absolute;
+    top: 4.5rem;
+    right: -4.5rem;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.Cart-Details {
+    margin-top: 4rem;
+    margin-bottom: 0;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #00000059;
+}
+.Cart-Details:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.Details {
+    color: #00000091;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.Details-Type-Info {
+    font-family: var(--font-family);
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 75px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+    color: #000000C4;
+    margin-bottom: 1rem;
+}
+
+.Details-Car-Capacity {
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.Details-Type-Container-First {
+    max-width: 65%;
+    width: 65%;
+    height: 100%;
+}
+
+.DetailsCarImg {
+    max-width: 70%;
+    width: 70%;
+    height: 50%;
+    object-fit: cover;
+    transform: rotatey(180deg) translateX(-4rem);
+    /* margin-top: 1rem; */
+    margin-bottom: 2rem;
+}
+
+.Details-Info-Container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100vw;
+    width: 100%;
+    height: 50%;
+}
+
+.Details-Type-Container-Second {
+    max-width: 35%;
+    width: 35%;
+    height: 100%;
+    padding-top: 4rem;
+}
+
+.Details-Second-Details {
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.Rating {
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0.3rem;
+}
+
+.Rating-Stars {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.Star-Color {
+    fill: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.Description {
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.Description-Value {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 400;
+    color: #00000080;
+    margin-bottom: 2rem;
+}
+
+.Colors {
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0.3rem;
+}
+
+.White-Car-Color {
+    color: white;
+}
+
+.Black-Car-Color {
+    color: black;
+}
+
+.Blue-Car-Color {
+    color: #6799D5;
+}
+
+.Color-Container {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.Car-Count {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.Minus-Btn {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+.Minus-Btn:hover {
+    opacity: 0.5;
+}
+.Plus-Btn {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+.Plus-Btn:hover{
+    opacity: 0.5;
+}
+.Price-Count-Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.Price {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 400;
+    color: #976E72;
+}
+
+.Price-Value {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+}
+
+.BuyNow-AddToCart-Container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.AddToCart {
+    padding: 0.5rem 1.2rem;
+    max-width: 10rem;
+    background-color: white;
+    border: none;
+    border-radius: 2rem;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 400;
+    color: #976E72;
+    white-space: nowrap;
+    text-align: center;
+    cursor: pointer;
+   }
+   .AddToCart:hover{
+    opacity: 0.5;
+   }
+.BuyNow {
+    padding: 0.5rem 1.2rem;
+    background-color: var(--primary-color);
+    border: none;
+    max-width:max-content ;
+    border-radius: 2rem;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    white-space: nowrap;
+    text-align: center;
+    cursor: pointer;
+}
+.BuyNow:hover{
+    opacity: 0.8;
+}
+@media screen and (max-width: 500px) {
+    .BuyNow-AddToCart-Container {
+        justify-content: center;
+    }
+}
