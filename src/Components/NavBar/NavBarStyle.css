@@ -140,4 +140,7 @@ display: block;
     .IoMenu  {
         display: block;
     }
+    .NavBar {
+        padding-right: 0;
+    }
 }
