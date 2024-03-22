@@ -3,7 +3,7 @@ import './FilterSearchStyle.css'
 import Select from 'react-select'
 
 const FilterSearch = ({FilterOptions}) => {
-    console.log(FilterOptions)
+
     return (
         <div className='FilterSearchContainer'>
             <div className='FilterSearch'>

@@ -7,11 +7,14 @@ import { useNavigate } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 import { useState } from 'react';
-
+import { useContext } from 'react'
+import { DataContext } from '../../Components/Context/Context'
 
 const NavBar = () => {
   const navigate = useNavigate();
   const [menuIcon, setMenu] = useState(false)
+  const MyCartProducts = useContext(DataContext);
+  const state = MyCartProducts.state;
 
   const showMenu = () => {
     setMenu(!menuIcon)
@@ -48,6 +51,7 @@ const NavBar = () => {
         })}
       </ul>
       <div className='RegisterCart'>
+        <span className='Cart-Count'>{state.length}</span>
         <img onClick={() => navigate('/MyCart')} className='CartIcon' src={CartIcon} alt="" />
         <button className='RegisterButton'>Register</button>
       </div>
@@ -72,7 +76,7 @@ const NavBar = () => {
             <button className='RegisterButton-Side'>Register</button>
           </div>
         </div>
-        
+
       </div>
     </nav>
   )

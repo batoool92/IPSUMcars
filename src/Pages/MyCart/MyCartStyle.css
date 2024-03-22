@@ -26,28 +26,41 @@
     text-decoration: underline;
     text-underline-offset: 1rem;
 }
-
+.ShowMessage {
+    font-family: var(--font-family);
+    display: block;
+    width: 100%;
+    font-size: 4rem;
+    text-align: center;
+}
+.HideMessage {
+    display: none;
+}
+.Hide-MyCart-Container{
+    display: none;
+}
 .MyCart-Container {
     font-family: var(--font-family);
-    font-size: 2rempx;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0.10000000149011612px;
+  
     text-align: left;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-    gap: 1.5rem;
+    grid-template-columns: 20% 15% 15% 10% 15% 15%;
+   justify-content: space-between;
     margin: 2rem auto;
+
 }
 
 .MyCart-Info {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 20% 15% 15% 10% 15% 15%;
     grid-auto-rows: 8rem;
-    gap: 1rem;
+    justify-content: space-between;
     margin-top: 2rem;
     margin-bottom: 2rem;
     text-align: left;
+  
 }
 
 .MyCart-Car-Img-Container {
@@ -62,8 +75,11 @@
     object-fit: cover;
     border-radius: 2rem;
 }
-
+.Delete-Icon-Container {
+    text-align: center;
+}
 .Delete-Icon {
+ 
     width: 0.5rem;
     height: 0.5rem;
     cursor: pointer;
@@ -75,24 +91,78 @@
 
 .MyCart-Info {
     font-family: var(--font-family);
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 400;
     line-height: 22px;
     color: #00000080;
 }
-
+.MyCartProduct{
+    text-align: left;
+   
+}
 .MyCartProduct-Type {
     font-family: var(--font-family);
     font-size: 1rem;
     font-weight: 400;
     color: black;
+    text-align: left;
 }
-
+/* .MyCartProduct-Price {
+    border: 1px solid black;
+}
+.MyCart-ProductInfo {
+      border: 1px solid black;
+}
+.MyCartProduct-Price-Value {
+    text-align: left;
+    border: 1px solid black;
+} */
+/* .MyCartProduct-Color {
+    text-align: left;
+    border: 1px solid black;
+}
+.MyCartProduct-Color-Value {
+    text-align: left;
+    border: 1px solid black;
+}*/
+.MyCartProduct-Del {
+    text-align: center;
+}
+.MyCartProduct-Count {
+    text-align: center;
+    /* border: 1px solid black; */
+}
+.MyCartProduct-Count-Value {
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    /* border: 1px solid black; */
+} 
+.FaCirclePlus, .FaCircleMinus {
+width: 1.5rem;
+height: 1.5rem;
+color: var(--primary-color);
+}
+.FaCirclePlus:hover, .FaCircleMinus:hover {
+width: 1.7rem;
+height: 1.7rem;
+opacity: 0.8;
+color: var(--primary-color);
+}
+.Title-Cost-Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .Empty {
     content: "";
 }
 
-
+.MyCart-Cost {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    color: var(--primary-color);
+}
  @media screen and (max-width: 415px) {
     .MyCart-Info {
     text-align: center;
