@@ -25,6 +25,7 @@
     font-weight: 400;
     color: #00000059;
 }
+
 .Cart-Details:hover {
     opacity: 0.3;
     cursor: pointer;
@@ -60,14 +61,20 @@
     height: 100%;
 }
 
+.DetailsCarImg-Container {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
 .DetailsCarImg {
-    max-width: 70%;
-    width: 70%;
-    height: 50%;
+    max-width: 100%;
+    width: 25rem;
+    height: 15rem;
     object-fit: cover;
-    transform: rotatey(180deg) translateX(-4rem);
-    /* margin-top: 1rem; */
     margin-bottom: 2rem;
+    border-radius: 2rem;
 }
 
 .Details-Info-Container {
@@ -134,6 +141,9 @@
 .White-Car-Color {
     color: white;
 }
+.White-Car-Color:hover {
+    border-color: black;
+}
 
 .Black-Car-Color {
     color: black;
@@ -161,17 +171,21 @@
     height: 2rem;
     cursor: pointer;
 }
+
 .Minus-Btn:hover {
     opacity: 0.5;
 }
+
 .Plus-Btn {
     width: 2rem;
     height: 2rem;
     cursor: pointer;
 }
-.Plus-Btn:hover{
+
+.Plus-Btn:hover {
     opacity: 0.5;
 }
+
 .Price-Count-Container {
     display: flex;
     justify-content: space-between;
@@ -210,15 +224,17 @@
     white-space: nowrap;
     text-align: center;
     cursor: pointer;
-   }
-   .AddToCart:hover{
+}
+
+.AddToCart:hover {
     opacity: 0.5;
-   }
+}
+
 .BuyNow {
     padding: 0.5rem 1.2rem;
     background-color: var(--primary-color);
     border: none;
-    max-width:max-content ;
+    max-width: max-content;
     border-radius: 2rem;
     font-family: var(--font-family);
     font-size: 1rem;
@@ -228,9 +244,11 @@
     text-align: center;
     cursor: pointer;
 }
-.BuyNow:hover{
+
+.BuyNow:hover {
     opacity: 0.8;
 }
+
 @media screen and (max-width: 500px) {
     .BuyNow-AddToCart-Container {
         justify-content: center;

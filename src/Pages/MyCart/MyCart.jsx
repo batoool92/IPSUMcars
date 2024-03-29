@@ -2,8 +2,6 @@ import './MyCartStyle.css'
 import NavBar from '../../Components/NavBar/NavBar'
 import MyCartBackground from '../../assets/Imgs/MyCartBackground.png'
 import DeleteIcon from "../../assets/Imgs/Delete-Icon.svg"
-import { FaCirclePlus } from "react-icons/fa6";
-import { FaCircleMinus } from "react-icons/fa6";
 import { useContext } from 'react'
 import { DataContext } from '../../Components/Context/Context'
 const MyCart = () => {
@@ -13,7 +11,8 @@ const MyCart = () => {
     const dispatch = MyCartProducts.dispatch;
    
     const TotalPrice = state.reduce((TotalPrice, item) => {
-        return TotalPrice + item.CarPrice * item.Quantity;
+        console.log(item)
+        return TotalPrice + (item.CarPrice * item.Quantity);
     },0)
 
     const Message = state.length === 0 ? "there are no items to show..." : ""
@@ -50,7 +49,7 @@ const MyCart = () => {
                         </div>
                         <div className='MyCartProduct-Price-Value'>$ {element.CarPrice * element.Quantity}</div>
                         <div className='MyCartProduct-Color-Value'>{element.Color}</div>
-                        <div className="MyCartProduct-Count-Value"><FaCirclePlus onClick={()=> dispatch({type: 'INCREASE', payload: element})} className='FaCirclePlus' />{element.Quantity}<FaCircleMinus onClick={()=> dispatch({type: 'DECREASE', payload: element})} className='FaCircleMinus'/></div>
+                        <div className="MyCartProduct-Count-Value">{element.Quantity}</div>
                         <div className='Delete-Icon-Container'><img onClick={()=> dispatch({type: 'REMOVE', payload: element })} className='Delete-Icon' src={DeleteIcon} alt="" /></div>
                     </div>
                 )

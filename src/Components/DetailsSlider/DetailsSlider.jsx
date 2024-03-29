@@ -1,30 +1,13 @@
+/* eslint-disable react/prop-types */
 import Slider from 'react-slick'
 import './DetailsSliderStyle.css'
 import { useRef } from 'react';
 import leftArrow from '../../assets/Imgs/Details-slider-left-arrow.svg'
 import rightArrow from '../../assets/Imgs/Details-slider-right-arrow.svg'
 
-
-const DetailsSlider = () => {
+const DetailsSlider = ({ CarImages }) => {
   const slider = useRef(null);
-
-  const DetailsCarImgs = [
-    {
-      img: 'src/assets/Imgs/Car-Details-Img1.jpg'
-    },
-    {
-      img: 'src/assets/Imgs/Car-Details-Img2.jpg'
-    },
-    {
-      img: 'src/assets/Imgs/Car-Details-Img3.jpg'
-    },
-    {
-      img: 'src/assets/Imgs/HeroCar3.png'
-    },
-    {
-      img: 'src/assets/Imgs/Car-Details-Img3.jpg'
-    }
-  ]
+  const keys = Object.values(CarImages);
   const settings = {
     dots: false,
     infinite: true,
@@ -63,10 +46,11 @@ const DetailsSlider = () => {
       <div onClick={() => slider.current.slickNext()}><img className='rightArrow' src={rightArrow} alt="" /></div>
       <div className="slider-container">
         <Slider ref={slider} {...settings}>
-          {DetailsCarImgs.map((element, index) => {
+       
+          { keys.map((key,index) => {
             return (
               <div className='CarDetailsImg-Container' key={index}>
-                <img className='CarDetailsImg' src={element.img} />
+                <img className='CarDetailsImg' src={CarImages[key]} />
               </div>
             )
 
