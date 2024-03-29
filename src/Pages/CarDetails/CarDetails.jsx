@@ -2,13 +2,13 @@
 /* eslint-disable react/prop-types */
 import NavBar from '../../Components/NavBar/NavBar'
 import './CarDetailsStyle.css'
-import DetailsBackground from '../../assets/Imgs/DetailsBackground.png'
+import DetailsBackground from '/IPSUMcars/assets/Imgs/DetailsBackground.png'
 import DetailsSlider from '../../Components/DetailsSlider/DetailsSlider'
 import { FaStar } from "react-icons/fa6";
 import { FaRegStar } from "react-icons/fa6";
 import { FaCircle } from "react-icons/fa6";
-import Plus from '../../assets/Imgs/plus.svg'
-import min from '../../assets/Imgs/min.svg'
+import Plus from '/assets/Imgs/plus.svg'
+import min from '/assets/Imgs/min.svg'
 import { useLocation } from 'react-router-dom'
 import { useState } from 'react';
 import { DataContext } from '../../Components/Context/Context';

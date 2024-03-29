@@ -3,8 +3,8 @@ import './CarsSliderStyle.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import NextArrow from '../../assets/Imgs/nextArrow.svg'
-import PrevArrow from '../../assets/Imgs/prevArrow.svg'
+import NextArrow from '/assets/Imgs/nextArrow.svg'
+import PrevArrow from '/assets/Imgs/prevArrow.svg'
 import { useRef } from 'react';
 
 
@@ -14,31 +14,31 @@ const CarsSlider = () => {
     const Slides = [
         {
             Category: "BMW",
-            CarImg: 'src/assets/Imgs/BMW.png'
+            CarImg: '/IPSUMcars/assets/Imgs/BMW.png'
         },
         {
             Category: "Bugatti",
-            CarImg: 'src/assets/Imgs/Bugatti.png'
+            CarImg: '/IPSUMcars/assets/Imgs/Bugatti.png'
         },
         {
             Category: "Audi",
-            CarImg: 'src/assets/Imgs/Audi.png'
+            CarImg: '/IPSUMcars/assets/Imgs/Audi.png'
         },
         {
             Category: "honda",
-            CarImg: 'src/assets/Imgs/honda.png'
+            CarImg: '/IPSUMcars/assets/Imgs/honda.png'
         },
         {
             Category: "BMW",
-            CarImg: 'src/assets/Imgs/BMW.png'
+            CarImg: '/IPSUMcars/assets/Imgs/BMW.png'
         },
         {
             Category: "honda",
-            CarImg: 'src/assets/Imgs/honda.png'
+            CarImg: '/IPSUMcars/assets/Imgs/honda.png'
         },
         {
             Category: "Bugatti",
-            CarImg: 'src/assets/Imgs/Bugatti.png'
+            CarImg: '/IPSUMcars/assets/Imgs/Bugatti.png'
         },
     ]
     const settings = {

@@ -1,11 +1,11 @@
 import './FooterStyle.css'
-import logo from '../../assets/Imgs/Logo.svg'
-import instagram from '../../assets/Imgs/instagram.svg'
-import lcation from '../../assets/Imgs/lcation.svg'
-import mail from '../../assets/Imgs/mail.svg'
-import twiter from '../../assets/Imgs/twiter.svg'
-import phone from '../../assets/Imgs/phone.svg'
-import facebook from '../../assets/Imgs/facebook.svg'
+import logo from '/assets/Imgs/Logo.svg'
+import instagram from '/assets/Imgs/instagram.svg'
+import lcation from '/assets/Imgs/lcation.svg'
+import mail from '/assets/Imgs/mail.svg'
+import twiter from '/assets/Imgs/twiter.svg'
+import phone from '/assets/Imgs/phone.svg'
+import facebook from '/assets/Imgs/facebook.svg'
 
 
 const Footer = () => {

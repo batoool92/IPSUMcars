@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import './TopCategoriesStyle.css'
-import Seator from '../../assets/Imgs/Seator.svg'
-import Manual from '../../assets/Imgs/Manual.svg'
-import CarCounter from '../../assets/Imgs/CarCounter.svg'
+import Seator from '/IPSUMcars/assets/Imgs/Seator.svg'
+import Manual from '/IPSUMcars/assets/Imgs/Manual.svg'
+import CarCounter from '/IPSUMcars/assets/Imgs/CarCounter.svg'
 import { useNavigate } from 'react-router-dom'
 import { useContext } from 'react'
 import { DataContext } from '../../Components/Context/Context'

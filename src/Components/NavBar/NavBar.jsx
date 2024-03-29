@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import './NavBarStyle.css'
-import logo from '../../assets/Imgs/Logo.svg'
-import CartIcon from '../../assets/Imgs/CartIcon.svg'
+import logo from '/assets/Imgs/Logo.svg'
+import CartIcon from '/assets/Imgs/CartIcon.svg'
 import { NavLink } from 'react-router-dom'
 import { useNavigate } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";

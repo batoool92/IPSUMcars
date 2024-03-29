@@ -16,7 +16,7 @@
     max-width: 45%;
     height: 68vh;
     /* padding: 3rem; */
-    background: url('../../assets/Imgs/HeroCarBackground.png');
+    background: url('/IPSUMcars/assets/Imgs/HeroCarBackground.png');
     background-repeat: no-repeat;
     background-size: cover;
 

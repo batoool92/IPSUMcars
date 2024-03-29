@@ -1,7 +1,7 @@
 import './MyCartStyle.css'
 import NavBar from '../../Components/NavBar/NavBar'
-import MyCartBackground from '../../assets/Imgs/MyCartBackground.png'
-import DeleteIcon from "../../assets/Imgs/Delete-Icon.svg"
+import MyCartBackground from '/assets/Imgs/MyCartBackground.png'
+import DeleteIcon from "/assets/Imgs/Delete-Icon.svg"
 import { useContext } from 'react'
 import { DataContext } from '../../Components/Context/Context'
 const MyCart = () => {
@@ -39,6 +39,7 @@ const MyCart = () => {
             </div>
            
             {state.map((element, index) => {
+                console.log(element)
                 return (
                     <div key={index} className="MyCart-Info">
                         <div className='MyCart-Car-Img-Container'><img className='MyCart-Car-Img' src={element.CarCategoryImg} alt="" /> </div>

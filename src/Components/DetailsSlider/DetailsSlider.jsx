@@ -2,12 +2,13 @@
 import Slider from 'react-slick'
 import './DetailsSliderStyle.css'
 import { useRef } from 'react';
-import leftArrow from '../../assets/Imgs/Details-slider-left-arrow.svg'
-import rightArrow from '../../assets/Imgs/Details-slider-right-arrow.svg'
+import leftArrow from '/assets/Imgs/Details-slider-left-arrow.svg'
+import rightArrow from '/assets/Imgs/Details-slider-right-arrow.svg'
 
 const DetailsSlider = ({ CarImages }) => {
   const slider = useRef(null);
   const keys = Object.values(CarImages);
+  console.log(CarImages)
   const settings = {
     dots: false,
     infinite: true,
@@ -48,9 +49,10 @@ const DetailsSlider = ({ CarImages }) => {
         <Slider ref={slider} {...settings}>
        
           { keys.map((key,index) => {
+            console.log(CarImages[index])
             return (
               <div className='CarDetailsImg-Container' key={index}>
-                <img className='CarDetailsImg' src={CarImages[key]} />
+                <img className='CarDetailsImg' src={CarImages[index].img} />
               </div>
             )
 

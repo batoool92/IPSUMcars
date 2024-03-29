@@ -16,7 +16,7 @@ const Home = () => {
       NumOfSeator: 4,
       DrivingType: 'Manual',
       CategoryCounter: "5KM/1-lt",
-      CarCategoryImg: 'src/assets/Imgs/Audi-category.jpg',
+      CarCategoryImg: '/IPSUMcars/assets/Imgs/Audi-category.jpg',
       Quantity: 1,
       CarPrice: 500,
       Code: '#45655',
@@ -24,10 +24,10 @@ const Home = () => {
       Color: 'Black',
       Rating: 3,
       CarImages: [
-        { img1: 'src/assets/Imgs/Audi-category.jpg' },
-        { img2: 'src/assets/Imgs/Honda-Category.jpg' },
-        { img3: 'src/assets/Imgs/VOLVO-Category.jpg' },
-        { img4: 'src/assets/Imgs/BMW-Category.jpg' }
+        { img: '/IPSUMcars/assets/Imgs/Audi-category.jpg' },
+        { img: '/IPSUMcars/assets/Imgs/Honda-Category.jpg' },
+        { img: '/IPSUMcars/assets/Imgs/VOLVO-Category.jpg' },
+        { img: '/IPSUMcars/assets/Imgs/BMW-Category.jpg' }
       ],
       Description: "The culmimination of comfort,luxury,and powerrul living is embodied in the First-Ever BMWX7 -the biggest BMW ever built."
     },
@@ -37,7 +37,7 @@ const Home = () => {
       NumOfSeator: 5,
       DrivingType: 'Manual',
       CategoryCounter: "5KM/1-lt",
-      CarCategoryImg: 'src/assets/Imgs/Honda-Category.jpg',
+      CarCategoryImg: '/IPSUMcars/assets/Imgs/Honda-Category.jpg',
       CarPrice: 500,
       Code: '#45655',
       EngineCapacity: '7000cc',
@@ -45,10 +45,10 @@ const Home = () => {
       Quantity: 1,
       Rating: 5,
       CarImages: [
-        { img1: 'src/assets/Imgs/Audi-category.jpg' },
-        { img2: 'src/assets/Imgs/Honda-Category.jpg' },
-        { img3: 'src/assets/Imgs/VOLVO-Category.jpg' },
-        { img4: 'src/assets/Imgs/BMW-Category.jpg' }
+        { img: '/IPSUMcars/assets/Imgs/Audi-category.jpg' },
+        { img: '/IPSUMcars/assets/Imgs/Honda-Category.jpg' },
+        { img: '/IPSUMcars/assets/Imgs/VOLVO-Category.jpg' },
+        { img: '/IPSUMcars/assets/Imgs/BMW-Category.jpg' }
       ],
       Description: "The culmimination of comfort,luxury,and powerrul living is embodied in the First-Ever BMWX7 -the biggest BMW ever built."
     },
@@ -58,7 +58,7 @@ const Home = () => {
       NumOfSeator: 4,
       DrivingType: 'Manual',
       CategoryCounter: "5KM/1-lt",
-      CarCategoryImg: 'src/assets/Imgs/VOLVO-Category.jpg',
+      CarCategoryImg: '/IPSUMcars/assets/Imgs/VOLVO-Category.jpg',
       CarPrice: 500,
       Code: '#45655',
       EngineCapacity: '6000cc',
@@ -66,10 +66,10 @@ const Home = () => {
       Quantity: 1,
       Rating: 4,
       CarImages: [
-        { img1: 'src/assets/Imgs/Audi-category.jpg' },
-        { img2: 'src/assets/Imgs/Honda-Category.jpg' },
-        { img3: 'src/assets/Imgs/VOLVO-Category.jpg' },
-        { img4: 'src/assets/Imgs/BMW-Category.jpg' }
+        { img: '/IPSUMcars/assets/Imgs/Audi-category.jpg' },
+        { img: '/IPSUMcars/assets/Imgs/Honda-Category.jpg' },
+        { img: '/IPSUMcars/assets/Imgs/VOLVO-Category.jpg' },
+        { img: '/IPSUMcars/assets/Imgs/BMW-Category.jpg' }
       ],
       Description: "The culmimination of comfort,luxury,and powerrul living is embodied in the First-Ever BMWX7 -the biggest BMW ever built."
     },
@@ -79,7 +79,7 @@ const Home = () => {
       NumOfSeator: 5,
       DrivingType: 'Manual',
       CategoryCounter: "5KM/1-lt",
-      CarCategoryImg: 'src/assets/Imgs/BMW-Category.jpg',
+      CarCategoryImg: '/IPSUMcars/assets/Imgs/BMW-Category.jpg',
       CarPrice: 750,
       Code: '#45655',
       EngineCapacity: '6000cc',
@@ -87,10 +87,10 @@ const Home = () => {
       Quantity: 1,
       Rating: 5,
       CarImages: [
-        { img1: 'src/assets/Imgs/Audi-category.jpg' },
-        { img2: 'src/assets/Imgs/Honda-Category.jpg' },
-        { img3: 'src/assets/Imgs/VOLVO-Category.jpg' },
-        { img4: 'src/assets/Imgs/BMW-Category.jpg' }
+        { img: '/IPSUMcars/assets/Imgs/Audi-category.jpg' },
+        { img: '/IPSUMcars/assets/Imgs/Honda-Category.jpg' },
+        { img: '/IPSUMcars/assets/Imgs/VOLVO-Category.jpg' },
+        { img: '/IPSUMcars/assets/Imgs/BMW-Category.jpg' }
       ],
       Description: "The culmimination of comfort,luxury,and powerrul living is embodied in the First-Ever BMWX7 -the biggest BMW ever built."
     },
@@ -98,7 +98,7 @@ const Home = () => {
   const FilterOptions = [
     {
       Name: 'Name',
-      FilterIcon: 'src/assets/Imgs/iconNameFilter.svg',
+      FilterIcon: '/IPSUMcars/assets/Imgs/iconNameFilter.svg',
       Options: [
         { value: 'a', label: 'a' },
         { value: 'a', label: 'a' },
@@ -107,7 +107,7 @@ const Home = () => {
     },
     {
       'Name': 'Price',
-      'FilterIcon': 'src/assets/Imgs/iconPriceFilter.svg',
+      'FilterIcon': '/IPSUMcars/assets/Imgs/iconPriceFilter.svg',
       Options: [
         { value: 'a', label: 'a' },
         { value: 'a', label: 'a' },
@@ -116,7 +116,7 @@ const Home = () => {
     },
     {
       'Name': 'Engine Capicity',
-      'FilterIcon': 'src/assets/Imgs/iconEngineCapacityFilter.svg',
+      'FilterIcon': '/IPSUMcars/assets/Imgs/iconEngineCapacityFilter.svg',
       Options: [
         { value: 'a', label: 'a' },
         { value: 'a', label: 'a' },
@@ -125,7 +125,7 @@ const Home = () => {
     },
     {
       'Name': 'Brand',
-      'FilterIcon': 'src/assets/Imgs/iconBrandFilter.svg',
+      'FilterIcon': '/assets/Imgs/iconBrandFilter.svg',
       Options: [
         { value: 'a', label: 'a' },
         { value: 'a', label: 'a' },
