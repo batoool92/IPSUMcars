@@ -1,6 +1,7 @@
 .MyCart {
+    max-width: 100%;
     position: relative;
-    padding: 0rem 4rem;
+    padding: 0rem;
 }
 
 .MyCart-Background {
@@ -10,7 +11,7 @@
     left: 0;
     max-width: 100vw;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh-4rem);
     background-size: cover;
     object-fit: cover;
     z-index: -1;
@@ -148,6 +149,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 4rem 4rem;
+
 }
 
 .Empty {

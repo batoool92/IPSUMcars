@@ -1,6 +1,7 @@
 .Home {
     padding: 0rem 0rem;
-    /* overflow-y: auto; */
+    height: 100vh;
+     overflow-y: scroll; 
     overflow-x: hidden;
   }
 

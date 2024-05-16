@@ -1,56 +1,69 @@
 /* eslint-disable no-case-declarations */
 /* eslint-disable react/prop-types */
 import { createContext, useEffect, useReducer } from "react";
-
+import { Bounce, ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const DataContext = createContext();
 
 export const Context = (props) => {
 
+   const notify = () => {
+    toast.success('item added succesfully', {
+        position: "bottom-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        transition: Bounce,
+        });
+   }
+    
     const reducer = (state, action) => {
         switch (action.type) {
             // add item to cart 
             case "ADD":
-                console.log("state" + typeof (state))
                 const tempstate = state.filter((item) => action.payload.id === item.id)
-                console.log("tempstate" + tempstate)
                 let newProduct = false
                 if (tempstate.length >= 1) {
-                    console.log(state.length)
                     state = state.map((item) => {
-                        if (item.id === action.payload.id && item.Color === action.payload.Color) {
+                        if (item.id === action.payload.id && item.Color === action.payload.Color) {                  
+                            notify()
                             return { ...item, Quantity: item.Quantity + action.payload.Quantity }
                         }
-                        else if (item.id === action.payload.id && item.Color !== action.payload.Color) {
+                        else if (item.id === action.payload.id && item.color !== action.payload.color) {
                             newProduct = true;
                             return item
                         }
                     }
                     )
                     if (newProduct === false) {
-                        console.log("false new product")
                         return state
                     }
                     else {
-                        console.log("true new product")
+                        notify()
                         return [...state, action.payload];
                     }
                 }
-                else if (tempstate.length == 0) {
+                else {
+                    notify()
                     return [...state, action.payload];
                 }
-
-                return state;
+                
+               
 
             case "REMOVE":
                 {
-                    state = state.filter((item) => 
-                         (item.id !== action.payload.id) || (item.Color !== action.payload.Color)
+                    state = state.filter((item) =>
+                        (item.id !== action.payload.id) || (item.Color !== action.payload.Color)
                     )
                     return state
                 }
 
-           
+
 
             default:
                 return state;
@@ -58,7 +71,7 @@ export const Context = (props) => {
     };
     const [state, dispatch] = useReducer(reducer, [], () => {
         const localData = localStorage.getItem('state');
-        return localData ? JSON.parse(localData) : []
+        return localData ? JSON.parse(localData) : [] //the default value of state
     });
 
     useEffect(() => {
@@ -67,9 +80,12 @@ export const Context = (props) => {
 
     const info = { state, dispatch }
     return (
-        <DataContext.Provider value={info}>
-            {props.children}
-        </DataContext.Provider>
+        <>
+            <DataContext.Provider value={info}>
+                {props.children}
+            </DataContext.Provider>
+            <ToastContainer />
+        </>
     )
 }
 

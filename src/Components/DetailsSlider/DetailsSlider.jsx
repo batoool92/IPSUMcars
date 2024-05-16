@@ -48,7 +48,7 @@ const DetailsSlider = ({ CarImages }) => {
       <div className="slider-container">
         <Slider ref={slider} {...settings}>
        
-          { keys.map((key,index) => {
+          { keys?.map((key,index) => {
             console.log(CarImages[index])
             return (
               <div className='CarDetailsImg-Container' key={index}>

@@ -66,8 +66,8 @@ const NavBar = () => {
           <ul className='NavMenu-SideBar'>
             {NavMenu.map((element, index) => {
               return (
-                <NavLink
-                  className='NavMenu-SideElement' activeClassName='active' key={index} to={element.path}>{element.title}</NavLink>
+                <NavLink 
+                  className='NavMenu-SideElement' activeclassname='active' key={index} to={element.path}>{element.title}</NavLink>
               )
             })}
           </ul>

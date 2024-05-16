@@ -1,8 +1,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
+
 import NavBar from '../../Components/NavBar/NavBar'
 import './CarDetailsStyle.css'
-import DetailsBackground from '/IPSUMcars/assets/Imgs/DetailsBackground.png'
+import DetailsBackground from '/assets/Imgs/DetailsBackground.png'
 import DetailsSlider from '../../Components/DetailsSlider/DetailsSlider'
 import { FaStar } from "react-icons/fa6";
 import { FaRegStar } from "react-icons/fa6";
@@ -68,10 +69,10 @@ const CarDetails = () => {
             <p className='Cart-Details'>Type &gt; Car &gt; <span className='Details'>Details</span></p>
             <div className='Details-Info-Container'>
                 <div className='Details-Type-Container-First'>
-                    <h1 className='Details-Type-Info'>{CarData.title} - Civic Type R</h1>
+                    <h1 className='Details-Type-Info'>{CarData.make} - {CarData.model}</h1>
                     <h1 className='Details-Car-Capacity'>{CarData.EngineCapacity}</h1>
                     <div className='DetailsCarImg-Container'>
-                        <img className='DetailsCarImg' src={CarData.CarCategoryImg} alt="" />
+                        <img className='DetailsCarImg' src={CarData.image} alt="" />
                     </div>
                     <DetailsSlider CarImages={CarData.CarImages} />
                 </div>
@@ -89,7 +90,7 @@ const CarDetails = () => {
                         })}
                     </div>
                     <h1 className='Description'>Description</h1>
-                    <p className='Description-Value'>{CarData.Description}</p>
+                    <p className='Description-Value'>{CarData.features}</p>
                     <h1 className='Colors'>Colors</h1>
                     <div className='Color-Container'>
                         <FaCircle onClick={() => ChangeColor('white')} className='White-Car-Color' />
@@ -102,7 +103,7 @@ const CarDetails = () => {
                             <p>{CarData.Quantity}</p>
                             <img onClick={() => IncrementCount()} className='Plus-Btn' src={Plus} alt="" />
                         </div>
-                        <p className='Price'>Price: <span className='Price-Value'>$ {CarData.CarPrice}</span></p>
+                        <p className='Price'>Price: <span className='Price-Value'>$ {CarData.price}</span></p>
                     </div>
                     <div className='BuyNow-AddToCart-Container'>
                         <button onClick={() => dispatch({ type: "ADD", payload: CarData})} className='AddToCart'>Add to Cart</button>

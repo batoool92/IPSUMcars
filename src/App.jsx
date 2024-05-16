@@ -12,13 +12,14 @@ import CarDetails from './Pages/CarDetails/CarDetails'
 function App() {
 
   return (
-   
+    
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/MyCart' element={<MyCart />} />
         <Route path='/CarDetails' element={<CarDetails />} />
       </Routes>
   
+
   )
 }
 

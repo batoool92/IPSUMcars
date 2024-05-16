@@ -1,5 +1,5 @@
 import './HeroStyle.css'
-import HeroCar from '/IPSUMcars/assets/Imgs/HeroCar3.png'
+import HeroCar from '/assets/Imgs/HeroCar3.png'
 
 const Hero = () => {
     return (

@@ -49,6 +49,40 @@
     background-color: var(--primary-color);
     cursor: pointer;
 }
-.SearchButton:hover  {
-opacity: 0.8;
+
+.SearchButton:hover {
+    opacity: 0.8;
+}
+.custom-select {
+    max-width: 10rem;
+    position: relative;
+  }
+select {
+    appearance: none;
+    /*  safari  */
+    -webkit-appearance: none;
+    /*  other styles for aesthetics */
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5em 0.5rem;
+    background-color: #fff;
+    border: 1px solid #caced1;
+    border-radius: 0.25rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.custom-select::before,
+.custom-select::after {
+    --size: 1rem;
+    content: "";
+    position: absolute;
+    right: 0.1rem;
+    pointer-events: none;
+}
+
+.Filtered-Cars-Container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }

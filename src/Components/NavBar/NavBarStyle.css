@@ -1,9 +1,15 @@
 .NavBar {
+    max-width: 100vw;
+    width: 100%;
+    height: 4rem;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 4rem 0rem 4rem;
+    padding: 2rem 4rem 2rem 4rem;
     font-family: var(--font-family);
+    z-index: 2;
+    background-color: white;
 }
 
 .logo {
