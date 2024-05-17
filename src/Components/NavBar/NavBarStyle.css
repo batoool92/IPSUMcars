@@ -176,6 +176,7 @@
     }
 
     .NavBar {
-        padding-right: 0;
+        padding-top: 3rem;
+        padding-right: 2rem;
     }
 }
