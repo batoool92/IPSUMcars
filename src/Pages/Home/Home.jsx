@@ -49,92 +49,92 @@ const Home = () => {
    console.log(productsDataUpdated)
   // console.log(productsDataUpdated)
 
-  // const productsData = [
-  //   {
-  //     id: 1,
-  //     title: 'AUDI',
-  //     NumOfSeator: 4,
-  //     DrivingType: 'Manual',
-  //     CategoryCounter: "5KM/1-lt",
-  //     CarCategoryImg: '/IPSUMcars/assets/Imgs/Audi-category.jpg',
-  //     Quantity: 1,
-  //     CarPrice: 500,
-  //     Code: '#45655',
-  //     EngineCapacity: '6000cc',
-  //     Color: 'Black',
-  //     Rating: 3,
-  //     CarImages: [
-  //       { img: '/IPSUMcars/assets/Imgs/Audi-category.jpg' },
-  //       { img: '/IPSUMcars/assets/Imgs/Honda-Category.jpg' },
-  //       { img: '/IPSUMcars/assets/Imgs/VOLVO-Category.jpg' },
-  //       { img: '/IPSUMcars/assets/Imgs/BMW-Category.jpg' }
-  //     ],
-  //     Description: "The culmimination of comfort,luxury,and powerrul living is embodied in the First-Ever BMWX7 -the biggest BMW ever built."
-  //   },
-  //   {
-  //     id: 2,
-  //     title: 'Honda',
-  //     NumOfSeator: 5,
-  //     DrivingType: 'Manual',
-  //     CategoryCounter: "5KM/1-lt",
-  //     CarCategoryImg: '/IPSUMcars/assets/Imgs/Honda-Category.jpg',
-  //     CarPrice: 500,
-  //     Code: '#45655',
-  //     EngineCapacity: '7000cc',
-  //     Color: 'Black',
-  //     Quantity: 1,
-  //     Rating: 5,
-  //     CarImages: [
-  //       { img: '/IPSUMcars/assets/Imgs/Audi-category.jpg' },
-  //       { img: '/IPSUMcars/assets/Imgs/Honda-Category.jpg' },
-  //       { img: '/IPSUMcars/assets/Imgs/VOLVO-Category.jpg' },
-  //       { img: '/IPSUMcars/assets/Imgs/BMW-Category.jpg' }
-  //     ],
-  //     Description: "The culmimination of comfort,luxury,and powerrul living is embodied in the First-Ever BMWX7 -the biggest BMW ever built."
-  //   },
-  //   {
-  //     id: 3,
-  //     title: 'VOLVO',
-  //     NumOfSeator: 4,
-  //     DrivingType: 'Manual',
-  //     CategoryCounter: "5KM/1-lt",
-  //     CarCategoryImg: '/IPSUMcars/assets/Imgs/VOLVO-Category.jpg',
-  //     CarPrice: 500,
-  //     Code: '#45655',
-  //     EngineCapacity: '6000cc',
-  //     Color: 'Black',
-  //     Quantity: 1,
-  //     Rating: 4,
-  //     CarImages: [
-  //       { img: '/IPSUMcars/assets/Imgs/Audi-category.jpg' },
-  //       { img: '/IPSUMcars/assets/Imgs/Honda-Category.jpg' },
-  //       { img: '/IPSUMcars/assets/Imgs/VOLVO-Category.jpg' },
-  //       { img: '/IPSUMcars/assets/Imgs/BMW-Category.jpg' }
-  //     ],
-  //     Description: "The culmimination of comfort,luxury,and powerrul living is embodied in the First-Ever BMWX7 -the biggest BMW ever built."
-  //   },
-  //   {
-  //     id: 4,
-  //     title: 'BMW',
-  //     NumOfSeator: 5,
-  //     DrivingType: 'Manual',
-  //     CategoryCounter: "5KM/1-lt",
-  //     CarCategoryImg: '/IPSUMcars/assets/Imgs/BMW-Category.jpg',
-  //     CarPrice: 750,
-  //     Code: '#45655',
-  //     EngineCapacity: '6000cc',
-  //     Color: 'Black',
-  //     Quantity: 1,
-  //     Rating: 5,
-  //     CarImages: [
-  //       { img: '/IPSUMcars/assets/Imgs/Audi-category.jpg' },
-  //       { img: '/IPSUMcars/assets/Imgs/Honda-Category.jpg' },
-  //       { img: '/IPSUMcars/assets/Imgs/VOLVO-Category.jpg' },
-  //       { img: '/IPSUMcars/assets/Imgs/BMW-Category.jpg' }
-  //     ],
-  //     Description: "The culmimination of comfort,luxury,and powerrul living is embodied in the First-Ever BMWX7 -the biggest BMW ever built."
-  //   },
-  // ]
+  const productsData = [
+    {
+      id: 1,
+      title: 'AUDI',
+      NumOfSeator: 4,
+      DrivingType: 'Manual',
+      CategoryCounter: "5KM/1-lt",
+      CarCategoryImg: '/IPSUMcars/assets/Imgs/Audi-category.jpg',
+      Quantity: 1,
+      CarPrice: 500,
+      Code: '#45655',
+      EngineCapacity: '6000cc',
+      Color: 'Black',
+      Rating: 3,
+      CarImages: [
+        { img: '/IPSUMcars/assets/Imgs/Audi-category.jpg' },
+        { img: '/IPSUMcars/assets/Imgs/Honda-Category.jpg' },
+        { img: '/IPSUMcars/assets/Imgs/VOLVO-Category.jpg' },
+        { img: '/IPSUMcars/assets/Imgs/BMW-Category.jpg' }
+      ],
+      Description: "The culmimination of comfort,luxury,and powerrul living is embodied in the First-Ever BMWX7 -the biggest BMW ever built."
+    },
+    {
+      id: 2,
+      title: 'Honda',
+      NumOfSeator: 5,
+      DrivingType: 'Manual',
+      CategoryCounter: "5KM/1-lt",
+      CarCategoryImg: '/IPSUMcars/assets/Imgs/Honda-Category.jpg',
+      CarPrice: 500,
+      Code: '#45655',
+      EngineCapacity: '7000cc',
+      Color: 'Black',
+      Quantity: 1,
+      Rating: 5,
+      CarImages: [
+        { img: '/IPSUMcars/assets/Imgs/Audi-category.jpg' },
+        { img: '/IPSUMcars/assets/Imgs/Honda-Category.jpg' },
+        { img: '/IPSUMcars/assets/Imgs/VOLVO-Category.jpg' },
+        { img: '/IPSUMcars/assets/Imgs/BMW-Category.jpg' }
+      ],
+      Description: "The culmimination of comfort,luxury,and powerrul living is embodied in the First-Ever BMWX7 -the biggest BMW ever built."
+    },
+    {
+      id: 3,
+      title: 'VOLVO',
+      NumOfSeator: 4,
+      DrivingType: 'Manual',
+      CategoryCounter: "5KM/1-lt",
+      CarCategoryImg: '/IPSUMcars/assets/Imgs/VOLVO-Category.jpg',
+      CarPrice: 500,
+      Code: '#45655',
+      EngineCapacity: '6000cc',
+      Color: 'Black',
+      Quantity: 1,
+      Rating: 4,
+      CarImages: [
+        { img: '/IPSUMcars/assets/Imgs/Audi-category.jpg' },
+        { img: '/IPSUMcars/assets/Imgs/Honda-Category.jpg' },
+        { img: '/IPSUMcars/assets/Imgs/VOLVO-Category.jpg' },
+        { img: '/IPSUMcars/assets/Imgs/BMW-Category.jpg' }
+      ],
+      Description: "The culmimination of comfort,luxury,and powerrul living is embodied in the First-Ever BMWX7 -the biggest BMW ever built."
+    },
+    {
+      id: 4,
+      title: 'BMW',
+      NumOfSeator: 5,
+      DrivingType: 'Manual',
+      CategoryCounter: "5KM/1-lt",
+      CarCategoryImg: '/IPSUMcars/assets/Imgs/BMW-Category.jpg',
+      CarPrice: 750,
+      Code: '#45655',
+      EngineCapacity: '6000cc',
+      Color: 'Black',
+      Quantity: 1,
+      Rating: 5,
+      CarImages: [
+        { img: '/IPSUMcars/assets/Imgs/Audi-category.jpg' },
+        { img: '/IPSUMcars/assets/Imgs/Honda-Category.jpg' },
+        { img: '/IPSUMcars/assets/Imgs/VOLVO-Category.jpg' },
+        { img: '/IPSUMcars/assets/Imgs/BMW-Category.jpg' }
+      ],
+      Description: "The culmimination of comfort,luxury,and powerrul living is embodied in the First-Ever BMWX7 -the biggest BMW ever built."
+    },
+  ]
   const FilterOptions = [
     {
       'Name': 'Name',
@@ -166,7 +166,7 @@ const Home = () => {
       <h3 className='FindByCar'>Find By Car Type</h3>
       <CarsSlider />
       <h3 className='TopCategories'>Top Categories</h3>
-      <TopCategories productsData={productsDataUpdated} />
+      <TopCategories productsData={productsData} />
       <Footer />
     </div>
   )

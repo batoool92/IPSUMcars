@@ -17,23 +17,23 @@ const Category = ({ element }) => {
 
     return (
         <>
-            <img className='CarCategoryImg' src={element.image} alt="" />
-            <h3 className='CarCategory'>{element.make}-{element.model}</h3>
+            <img className='CarCategoryImg' src={element.CarCategoryImg} alt="" />
+            <h3 className='CarCategory'>{element.title}</h3>
             <div className="CategoryInfo">
                 <div className='CategorySeator'>
                     <img className='CategorySeatorIcon' src={Seator} alt="" />
-                    <p>{element.owners} Seator</p>
+                    <p>{element.NumOfSeator} Seator</p>
                 </div>
                 <div className='CategoryManual'>
                     <img className='CategoryManualIcon' src={Manual} alt="" />
-                    <p>{element.transmission}</p>
+                    <p>{element.DrivingType}</p>
                 </div>
                 <div className='CategoryCounter'>
                     <img className='CategoryCounterIcon' src={CarCounter} alt="" />
-                    <p>{element.horsepower}</p>
+                    <p>{element.CategoryCounter}</p>
                 </div>
             </div>
-            <p className='CarCost'>Starting at {element.price}/Day</p>
+            <p className='CarCost'>Starting at {element.CarPrice}/Day</p>
             <div className='CarCategoryBtns'>
                 <button onClick={() => GoToDetails(element)} className='DetailsBtn'>Details &gt;</button>
                 <button onClick={() => dispatch({ type: "ADD", payload: element })} className='BuyNowBtn'>Buy Now</button>
